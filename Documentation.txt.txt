@@ -1,0 +1,6 @@
+Components
+-Constant Current LED Driver
+	-Desc: 1.5A 2 ~ 30 V Constant Current LED Driver Buck Topology 1 Output
+	-Digikey part num: 1866-3101-ND
+	-Link: https://www.digikey.com/product-detail/en/mean-well-usa-inc/LDD-1500L/1866-3101-ND/7704724
+	-used to supply Cree LEDs
