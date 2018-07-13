@@ -1,0 +1,212 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MRDT_Actives
+LIBS:MRDT_Connectors
+LIBS:MRDT_Devices
+LIBS:MRDT_Drill_Holes
+LIBS:MRDT_Headers
+LIBS:MRDT_ICs
+LIBS:MRDT_Passives
+LIBS:MRDT_Shields
+LIBS:MRDT_Silkscreens
+LIBS:MRDT_Switches
+LIBS:LEDPodBoard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LED Pod Board"
+Date "2018-04-21"
+Rev "1"
+Comp "Mars Rover Design Team"
+Comment1 "forward voltage of 3.1V at 1.5A."
+Comment2 "Series string of nine Cree XLamp XP-G2 LEDs on a circular pcb. Each has max."
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED3P LED1
+U 1 1 5ADC1597
+P 1950 2050
+F 0 "LED1" H 2150 1750 60  0000 C CNN
+F 1 "LED3P" H 2150 2300 60  0000 C CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 2150 2400 60  0001 C CNN
+F 3 "" H 1950 2050 60  0000 C CNN
+	1    1950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED3P LED2
+U 1 1 5ADC1629
+P 2450 2050
+F 0 "LED2" H 2650 1750 60  0000 C CNN
+F 1 "LED3P" H 2650 2300 60  0000 C CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 2650 2400 60  0001 C CNN
+F 3 "" H 2450 2050 60  0000 C CNN
+	1    2450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED3P LED3
+U 1 1 5ADC169D
+P 2950 2050
+F 0 "LED3" H 3150 1750 60  0000 C CNN
+F 1 "LED3P" H 3150 2300 60  0000 C CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 3150 2400 60  0001 C CNN
+F 3 "" H 2950 2050 60  0000 C CNN
+	1    2950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED3P LED4
+U 1 1 5ADC16D0
+P 3450 2050
+F 0 "LED4" H 3650 1750 60  0000 C CNN
+F 1 "LED3P" H 3650 2300 60  0000 C CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 3650 2400 60  0001 C CNN
+F 3 "" H 3450 2050 60  0000 C CNN
+	1    3450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED3P LED5
+U 1 1 5ADC1702
+P 3950 2050
+F 0 "LED5" H 4150 1750 60  0000 C CNN
+F 1 "LED3P" H 4150 2300 60  0000 C CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 4150 2400 60  0001 C CNN
+F 3 "" H 3950 2050 60  0000 C CNN
+	1    3950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED3P LED6
+U 1 1 5ADC173F
+P 4450 2050
+F 0 "LED6" H 4650 1750 60  0000 C CNN
+F 1 "LED3P" H 4650 2300 60  0000 C CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 4650 2400 60  0001 C CNN
+F 3 "" H 4450 2050 60  0000 C CNN
+	1    4450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED3P LED7
+U 1 1 5ADC1775
+P 4950 2050
+F 0 "LED7" H 5150 1750 60  0000 C CNN
+F 1 "LED3P" H 5150 2300 60  0000 C CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 5150 2400 60  0001 C CNN
+F 3 "" H 4950 2050 60  0000 C CNN
+	1    4950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED3P LED8
+U 1 1 5ADC17B0
+P 5450 2050
+F 0 "LED8" H 5650 1750 60  0000 C CNN
+F 1 "LED3P" H 5650 2300 60  0000 C CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 5650 2400 60  0001 C CNN
+F 3 "" H 5450 2050 60  0000 C CNN
+	1    5450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED3P LED9
+U 1 1 5ADC17EC
+P 5950 2050
+F 0 "LED9" H 6150 1750 60  0000 C CNN
+F 1 "LED3P" H 6150 2300 60  0000 C CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 6150 2400 60  0001 C CNN
+F 3 "" H 5950 2050 60  0000 C CNN
+	1    5950 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2200 6100 2200
+Connection ~ 5600 2200
+Connection ~ 5100 2200
+Connection ~ 4600 2200
+Connection ~ 4100 2200
+Connection ~ 3600 2200
+Connection ~ 3100 2200
+Connection ~ 2600 2200
+Wire Wire Line
+	2350 2050 2450 2050
+Wire Wire Line
+	2850 2050 2950 2050
+Wire Wire Line
+	3350 2050 3450 2050
+Wire Wire Line
+	3850 2050 3950 2050
+Wire Wire Line
+	4350 2050 4450 2050
+Wire Wire Line
+	4850 2050 4950 2050
+Wire Wire Line
+	5350 2050 5450 2050
+Wire Wire Line
+	5850 2050 5950 2050
+Wire Wire Line
+	6350 2050 6450 2050
+Wire Wire Line
+	6450 2050 6450 1700
+Wire Wire Line
+	6450 1700 1600 1700
+Wire Wire Line
+	1500 2050 1950 2050
+$Comp
+L Molex_SL_2 Conn1
+U 1 1 5ADC1FE2
+P 1650 1250
+F 0 "Conn1" H 1700 1200 60  0001 C CNN
+F 1 "Molex_SL_2" V 1800 1350 60  0000 C CNN
+F 2 "MRDT_Connectors:MOLEX_SL_2_Horizontal" H 1650 1150 60  0001 C CNN
+F 3 "" H 1650 1150 60  0001 C CNN
+	1    1650 1250
+	0    -1   -1   0   
+$EndComp
+Text Label 4050 2200 2    60   ~ 0
+Heat_Slug
+Wire Wire Line
+	1500 2050 1500 1450
+Wire Wire Line
+	1600 1700 1600 1450
+Text Label 1650 1700 0    60   ~ 0
+GND
+Text Label 1550 2050 0    60   ~ 0
+VIN
+$EndSCHEMATC
