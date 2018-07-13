@@ -1,2 +1,2 @@
-# 2018_Cometition_Atlas
-All Hardware and Software Files used in the 2018 Competition
+# SensorPodSoftware
+Software for Wireless ESP8266 Soil and Moisture SensorPod
