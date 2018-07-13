@@ -1,2 +1,2 @@
-# 2018_Cometition_Atlas
-All Hardware and Software Files used in the 2018 Competition
+# RoveBoard-ESP8266
+This is the hardware abstraction layer for the ESP8266 platform.
