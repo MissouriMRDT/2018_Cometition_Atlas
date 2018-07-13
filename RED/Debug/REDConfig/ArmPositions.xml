@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<ArmPositions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Positions>
+    <Selection>
+      <Name>Right Bay</Name>
+      <J1>110.24</J1>
+      <J2>115.83</J2>
+      <J3>63.75</J3>
+      <J4>0</J4>
+      <J5>180</J5>
+      <J6>0</J6>
+    </Selection>
+    <Selection>
+      <Name>Left Bay</Name>
+      <J1>255</J1>
+      <J2>115.83</J2>
+      <J3>63.75</J3>
+      <J4>0</J4>
+      <J5>180</J5>
+      <J6>0</J6>
+    </Selection>
+    <Selection>
+      <Name>Reset Home</Name>
+      <J1>0</J1>
+      <J2>80</J2>
+      <J3>100</J3>
+      <J4>0</J4>
+      <J5>185</J5>
+      <J6>0</J6>
+    </Selection>
+  </Positions>
+</ArmPositions>

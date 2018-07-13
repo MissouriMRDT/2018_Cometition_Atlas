@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<PingToolConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AutoRate>1000</AutoRate>
+  <Timeout>1000</Timeout>
+  <Servers>
+    <Server>
+      <Name>Base Rocket</Name>
+      <Address>192.168.1.83</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>false</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>Rover Rocket</Name>
+      <Address>192.168.1.82</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>false</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>Drive Board</Name>
+      <Address>192.168.1.130</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>true</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>Arm Board</Name>
+      <Address>192.168.1.131</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>true</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>Power Board</Name>
+      <Address>192.168.1.132</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>true</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>Nav Board</Name>
+      <Address>192.168.1.133</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>true</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>External Controls Board</Name>
+      <Address>192.168.1.134</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>true</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>Science Board</Name>
+      <Address>192.168.1.135</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>true</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>Autonomy Board</Name>
+      <Address>192.168.1.138</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>true</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>Science Arm Board</Name>
+      <Address>192.168.1.139</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>true</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>Camera Board</Name>
+      <Address>192.168.1.140</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>true</SupportsRoveComm>
+    </Server>
+    <Server>
+      <Name>Grandstream</Name>
+      <Address>192.168.1.226</Address>
+      <SupportsICMP>true</SupportsICMP>
+      <SupportsRoveComm>false</SupportsRoveComm>
+    </Server>
+  </Servers>
+</PingToolConfig>

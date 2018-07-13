@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<StopwatchSchedules xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Schedules>
+    <Schedule>
+      <Name>Sample Task</Name>
+      <Phases>
+        <Phase>
+          <Name>Find Cache</Name>
+          <Duration>60</Duration>
+        </Phase>
+        <Phase>
+          <Name>Pick up Tools</Name>
+          <Duration>300</Duration>
+        </Phase>
+        <Phase>
+          <Name>To Astro #1</Name>
+          <Duration>120</Duration>
+        </Phase>
+        <Phase>
+          <Name>Drop Off #1</Name>
+          <Duration>60</Duration>
+        </Phase>
+        <Phase>
+          <Name>To Astro #2</Name>
+          <Duration>120</Duration>
+        </Phase>
+        <Phase>
+          <Name>Drop Off #1</Name>
+          <Duration>120</Duration>
+        </Phase>
+        <Phase>
+          <Name>Return to Start</Name>
+          <Duration>120</Duration>
+        </Phase>
+      </Phases>
+    </Schedule>
+  </Schedules>
+</StopwatchSchedules>

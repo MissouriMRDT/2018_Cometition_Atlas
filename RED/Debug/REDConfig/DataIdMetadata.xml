@@ -1,0 +1,720 @@
+<?xml version="1.0"?>
+<REDMetadataSaveFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Servers>
+    <Server>
+      <Name>Drive Board</Name>
+      <Address>192.168.1.130</Address>
+      <Commands>
+        <Record>
+          <Id>528</Id>
+          <Name>DriveLeftRight</Name>
+          <Description>Left wheels speed followed by right wheels speed</Description>
+        </Record>
+        <Record>
+          <Id>100</Id>
+          <Name>MotorLeftSpeed</Name>
+          <Description>Left motor speed. Range is -1000 to 1000 (full reverse to full forward)</Description>
+        </Record>
+        <Record>
+          <Id>101</Id>
+          <Name>MotorRightSpeed</Name>
+          <Description>Right motor speed. Range is -1000 to 1000 (full reverse to full forward)</Description>
+        </Record>
+        <Record>
+          <Id>1584</Id>
+          <Name>DropBayOpen</Name>
+          <Description>Commands the specified drop bay to open</Description>
+        </Record>
+        <Record>
+          <Id>1585</Id>
+          <Name>DropBayClose</Name>
+          <Description>Commands the specified drop bay to close</Description>
+        </Record>
+        <Record>
+          <Id>104</Id>
+          <Name>UnderglowColor</Name>
+          <Description />
+        </Record>
+        <Record>
+          <Id>2336</Id>
+          <Name>Headlights</Name>
+          <Description />
+        </Record>
+        <Record>
+          <Id>102</Id>
+          <Name>PanServo</Name>
+          <Description />
+        </Record>
+        <Record>
+          <Id>103</Id>
+          <Name>TiltServo</Name>
+          <Description />
+        </Record>
+      </Commands>
+      <Telemetry />
+    </Server>
+    <Server>
+      <Name>Arm Board</Name>
+      <Address>192.168.1.131</Address>
+      <Commands>
+        <Record>
+          <Id>801</Id>
+          <Name>ArmJ1</Name>
+          <Description>Positive is clockwise. Negative is counter-clockwise.</Description>
+        </Record>
+        <Record>
+          <Id>802</Id>
+          <Name>ArmJ2</Name>
+          <Description>Positive is up. Negative is down.</Description>
+        </Record>
+        <Record>
+          <Id>803</Id>
+          <Name>ArmJ3</Name>
+          <Description>Positive is clockwise. Negative is counter-clockwise.</Description>
+        </Record>
+        <Record>
+          <Id>804</Id>
+          <Name>ArmJ4</Name>
+          <Description>Positive is up. Negative is down.</Description>
+        </Record>
+        <Record>
+          <Id>805</Id>
+          <Name>ArmJ5</Name>
+          <Description>Positive is forward. Negative is backward.</Description>
+        </Record>
+        <Record>
+          <Id>806</Id>
+          <Name>ArmJ6</Name>
+          <Description>Positive is clockwise. Negative is counter-clockwise.</Description>
+        </Record>
+        <Record>
+          <Id>807</Id>
+          <Name>ArmValues</Name>
+          <Description>All values for the arm together. Armj1-j6, then primary then secondary gripper.</Description>
+        </Record>
+        <Record>
+          <Id>800</Id>
+          <Name>ArmStop</Name>
+          <Description>Stops all arm movement</Description>
+        </Record>
+        <Record>
+          <Id>816</Id>
+          <Name>ArmEnableAll</Name>
+          <Description>Enables/Disables Power to all Joints</Description>
+        </Record>
+        <Record>
+          <Id>817</Id>
+          <Name>ArmEnableMain</Name>
+          <Description>Enables/Disables Power to 12V Bus</Description>
+        </Record>
+        <Record>
+          <Id>818</Id>
+          <Name>ArmEnableJ1</Name>
+          <Description>Enables/Disables Power to J1</Description>
+        </Record>
+        <Record>
+          <Id>819</Id>
+          <Name>ArmEnableJ2</Name>
+          <Description>Enables/Disables Power to J2</Description>
+        </Record>
+        <Record>
+          <Id>820</Id>
+          <Name>ArmEnableJ3</Name>
+          <Description>Enables/Disables Power to J3</Description>
+        </Record>
+        <Record>
+          <Id>821</Id>
+          <Name>ArmEnableJ4</Name>
+          <Description>Enables/Disables Power to J4</Description>
+        </Record>
+        <Record>
+          <Id>822</Id>
+          <Name>ArmEnableJ5</Name>
+          <Description>Enables/Disables Power to J5</Description>
+        </Record>
+        <Record>
+          <Id>823</Id>
+          <Name>ArmEnableJ6</Name>
+          <Description>Enables/Disables Power to J6</Description>
+        </Record>
+        <Record>
+          <Id>824</Id>
+          <Name>ArmEnableEndeff1</Name>
+          <Description>Enables/Disables Power to Endeffector</Description>
+        </Record>
+        <Record>
+          <Id>825</Id>
+          <Name>ArmEnableEndeff2</Name>
+          <Description>Enables/Disables Power to Endeffector Servo</Description>
+        </Record>
+        <Record>
+          <Id>784</Id>
+          <Name>ArmAbsoluteAngle</Name>
+          <Description>Sets position based on six absolute angles</Description>
+        </Record>
+        <Record>
+          <Id>785</Id>
+          <Name>ArmAbsoluteXYZ</Name>
+          <Description>Sets position based on absolute XYZ, yaw pitch and roll</Description>
+        </Record>
+        <Record>
+          <Id>808</Id>
+          <Name>ArmGetXYZ</Name>
+          <Description>Requests to get the arm's current IK coordinates</Description>
+        </Record>
+        <Record>
+          <Id>786</Id>
+          <Name>IKRoverIncrement</Name>
+          <Description>Increments IK positions based on rover perspective, XYZ yaw pitch roll. Each value is normalized -1000 to 1000</Description>
+        </Record>
+        <Record>
+          <Id>787</Id>
+          <Name>IKWristIncrement</Name>
+          <Description>Increments IK positions based on wrist perspective, XYZ yaw pitch roll. Each value is normalized -1000 to 1000</Description>
+        </Record>
+        <Record>
+          <Id>793</Id>
+          <Name>ArmGetPosition</Name>
+          <Description>Requests Current Position</Description>
+        </Record>
+        <Record>
+          <Id>896</Id>
+          <Name>LimitSwitchUnOverride</Name>
+          <Description>Index of limit switch to remove override</Description>
+        </Record>
+        <Record>
+          <Id>897</Id>
+          <Name>LimitSwitchOverride</Name>
+          <Description>Index of limit switch to override</Description>
+        </Record>
+        <Record>
+          <Id>864</Id>
+          <Name>Endeffector1</Name>
+          <Description>Positive is open. Negative is close.</Description>
+        </Record>
+        <Record>
+          <Id>868</Id>
+          <Name>Endeffector2</Name>
+          <Description>Positive is clockwise. Negative is counterclockwise.</Description>
+        </Record>
+        <Record>
+          <Id>869</Id>
+          <Name>GripperSwap</Name>
+          <Description>Swaps the gripper position by 180 degrees so that the rear facing gripper faces forward.</Description>
+        </Record>
+        <Record>
+          <Id>870</Id>
+          <Name>OpPoint</Name>
+          <Description>Sets the IK Op Point, 3 floats, x y z</Description>
+        </Record>
+        <Record>
+          <Id>871</Id>
+          <Name>ToggleAutoPositionTelem</Name>
+          <Description>toggles automatically sending arm position data </Description>
+        </Record>
+      </Commands>
+      <Telemetry>
+        <Record>
+          <Id>792</Id>
+          <Name>ArmCurrentPosition</Name>
+          <Description>Contains the current angles from each joint</Description>
+        </Record>
+        <Record>
+          <Id>794</Id>
+          <Name>ArmCurrentXYZ</Name>
+          <Description>Contains the current IK coordinates of arm. xyz, yaw pitch roll</Description>
+        </Record>
+        <Record>
+          <Id>832</Id>
+          <Name>ArmFault</Name>
+          <Description>Indicates when the arm reports a fault condition</Description>
+        </Record>
+        <Record>
+          <Id>865</Id>
+          <Name>GripperCurrent</Name>
+          <Description>Current reading from gripper motor</Description>
+        </Record>
+        <Record>
+          <Id>867</Id>
+          <Name>DrillCurrent</Name>
+          <Description>Current reading from drill motor</Description>
+        </Record>
+        <Record>
+          <Id>880</Id>
+          <Name>ArmCurrentMain</Name>
+          <Description>Current reading for main power</Description>
+        </Record>
+      </Telemetry>
+    </Server>
+    <Server>
+      <Name>Power Board</Name>
+      <Address>192.168.1.132</Address>
+      <Commands>
+        <Record>
+          <Id>1040</Id>
+          <Name>BMSStop</Name>
+          <Description>BMS E-stop. WARNING: Kills all rover power. Cannot be reversed remotely!</Description>
+        </Record>
+        <Record>
+          <Id>1041</Id>
+          <Name>BMSReboot</Name>
+          <Description>BMS E-stop with reboot.</Description>
+        </Record>
+        <Record>
+          <Id>1078</Id>
+          <Name>BMSFanControl</Name>
+          <Description>0=off, 1=on</Description>
+        </Record>
+        <Record>
+          <Id>1079</Id>
+          <Name>BMSBuzzerControl</Name>
+          <Description>0=off, 1=on</Description>
+        </Record>
+        <Record>
+          <Id>1088</Id>
+          <Name>PowerBusEnable</Name>
+          <Description>Enables power bus</Description>
+        </Record>
+        <Record>
+          <Id>1089</Id>
+          <Name>PowerBusDisable</Name>
+          <Description>Disables power bus</Description>
+        </Record>
+      </Commands>
+      <Telemetry>
+        <Record>
+          <Id>1056</Id>
+          <Name>Cell1Voltage</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1057</Id>
+          <Name>Cell2Voltage</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1058</Id>
+          <Name>Cell3Voltage</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1059</Id>
+          <Name>Cell4Voltage</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1060</Id>
+          <Name>Cell5Voltage</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1061</Id>
+          <Name>Cell6Voltage</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1062</Id>
+          <Name>Cell7Voltage</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1063</Id>
+          <Name>Cell8Voltage</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1072</Id>
+          <Name>TotalPackCurrent</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1073</Id>
+          <Name>TotalPackVoltage</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1074</Id>
+          <Name>BMSTemperature1</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1075</Id>
+          <Name>BMSTemperature2</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1076</Id>
+          <Name>BMSPackOvercurrent</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1077</Id>
+          <Name>BMSPackUndervoltage</Name>
+          <Description>BMS</Description>
+        </Record>
+        <Record>
+          <Id>1104</Id>
+          <Name>Motor1Current</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1105</Id>
+          <Name>Motor2Current</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1106</Id>
+          <Name>Motor3Current</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1107</Id>
+          <Name>Motor4Current</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1108</Id>
+          <Name>Motor5Current</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1109</Id>
+          <Name>Motor6Current</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1110</Id>
+          <Name>Motor7Current</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1111</Id>
+          <Name>Motor8Current</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1112</Id>
+          <Name>Bus5VCurrent</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1113</Id>
+          <Name>Bus12VCurrent</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1114</Id>
+          <Name>General12V40A</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1115</Id>
+          <Name>ActuationCurrent</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1116</Id>
+          <Name>LogicCurrent</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1117</Id>
+          <Name>CommunicationsCurrent</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1120</Id>
+          <Name>InputVoltage</Name>
+          <Description>Powerboard</Description>
+        </Record>
+        <Record>
+          <Id>1090</Id>
+          <Name>PowerBusOverCurrentNotification</Name>
+          <Description>Sent if a bus is disabled due to overcurrent. Value indicates bus</Description>
+        </Record>
+      </Telemetry>
+    </Server>
+    <Server>
+      <Name>Nav Board</Name>
+      <Address>192.168.1.133</Address>
+      <Commands />
+      <Telemetry>
+        <Record>
+          <Id>1312</Id>
+          <Name>Heading</Name>
+          <Description>The direction of the heading of the rover</Description>
+        </Record>
+        <Record>
+          <Id>1313</Id>
+          <Name>IMUTemperature</Name>
+          <Description>IMU Data</Description>
+        </Record>
+        <Record>
+          <Id>1314</Id>
+          <Name>IMUAccelerometer</Name>
+          <Description>IMU Data</Description>
+        </Record>
+        <Record>
+          <Id>1315</Id>
+          <Name>IMUGyroscope</Name>
+          <Description>IMU Data</Description>
+        </Record>
+        <Record>
+          <Id>1316</Id>
+          <Name>IMUMagnetometer</Name>
+          <Description>IMU Data</Description>
+        </Record>
+        <Record>
+          <Id>1296</Id>
+          <Name>GPSQuality</Name>
+          <Description>Quality of GPS signal</Description>
+        </Record>
+        <Record>
+          <Id>1297</Id>
+          <Name>GPSPosition</Name>
+          <Description>GPS Position. Latitude followed by Longitude</Description>
+        </Record>
+        <Record>
+          <Id>1298</Id>
+          <Name>GPSSpeed</Name>
+          <Description>Speed of GPS delta</Description>
+        </Record>
+        <Record>
+          <Id>1299</Id>
+          <Name>GPSSpeedAngle</Name>
+          <Description>Angle of GPS delta in degrees</Description>
+        </Record>
+        <Record>
+          <Id>1300</Id>
+          <Name>GPSAltitude</Name>
+          <Description>GPS Altitude</Description>
+        </Record>
+        <Record>
+          <Id>1301</Id>
+          <Name>GPSSatellites</Name>
+          <Description>Number of GPS Satellites</Description>
+        </Record>
+      </Telemetry>
+    </Server>
+    <Server>
+      <Name>Gimbal Board</Name>
+      <Address>192.168.1.134</Address>
+      <Commands>
+        <Record>
+          <Id>1552</Id>
+          <Name>Pan</Name>
+          <Description>Pan speed of pan/tilt mount (-1000 to 1000)</Description>
+        </Record>
+        <Record>
+          <Id>1553</Id>
+          <Name>Zoom</Name>
+          <Description>Zoom the camera. -1000 to 1000 representing how fast to zoom in or out</Description>
+        </Record>
+        <Record>
+          <Id>1554</Id>
+          <Name>Tilt</Name>
+          <Description>Tilt speed of pan/tilt mount  (-1000 to 1000)</Description>
+        </Record>
+        <Record>
+          <Id>1555</Id>
+          <Name>Roll</Name>
+          <Description>Roll of the (-1000,1000)</Description>
+        </Record>
+        <Record>
+          <Id>1556</Id>
+          <Name>Mast</Name>
+          <Description>Mast control open loop (-1000,1000)</Description>
+        </Record>
+        <Record>
+          <Id>1557</Id>
+          <Name>GimbalOpenValues</Name>
+          <Description>Compacted values for pan tilt roll mast and Zoom</Description>
+        </Record>
+        <Record>
+          <Id>1558</Id>
+          <Name>GimbalRecord</Name>
+          <Description>Set camera recording state. Enumerated, 0 = stop, 1 = start, 2 = snapshot</Description>
+        </Record>
+      </Commands>
+      <Telemetry />
+    </Server>
+    <Server>
+      <Name>Science Board</Name>
+      <Address>192.168.1.135</Address>
+      <Commands>
+        <Record>
+          <Id>1808</Id>
+          <Name>ScienceCommand</Name>
+          <Description>Sends command/request to the Science experiment. Enumerated value indicates type of request.</Description>
+        </Record>
+      </Commands>
+      <Telemetry>
+        <Record>
+          <Id>1824</Id>
+          <Name>SciSensor0</Name>
+          <Description>Sensor 0 reading from Science Experiment</Description>
+        </Record>
+        <Record>
+          <Id>1825</Id>
+          <Name>SciSensor1</Name>
+          <Description>Sensor 1 reading from Science Experiment</Description>
+        </Record>
+        <Record>
+          <Id>1826</Id>
+          <Name>SciSensor2</Name>
+          <Description>Sensor 2 reading from Science Experiment</Description>
+        </Record>
+        <Record>
+          <Id>1827</Id>
+          <Name>SciSensor3</Name>
+          <Description>Sensor 3 reading from Science Experiment</Description>
+        </Record>
+        <Record>
+          <Id>1828</Id>
+          <Name>SciSensor4</Name>
+          <Description>Sensor 4 reading from Science Experiment</Description>
+        </Record>
+        <Record>
+          <Id>1829</Id>
+          <Name>SciSensor5</Name>
+          <Description>Sensor 5 reading from Science Experiment</Description>
+        </Record>
+        <Record>
+          <Id>1830</Id>
+          <Name>SciSensor6</Name>
+          <Description>Sensor 6 reading from Science Experiment</Description>
+        </Record>
+      </Telemetry>
+    </Server>
+    <Server>
+      <Name>Sensor Pod</Name>
+      <Address>192.168.1.136</Address>
+      <Commands />
+      <Telemetry>
+        <Record>
+          <Id>1832</Id>
+          <Name>Temperature</Name>
+          <Description />
+        </Record>
+        <Record>
+          <Id>1833</Id>
+          <Name>Moisture</Name>
+          <Description>Moist</Description>
+        </Record>
+      </Telemetry>
+    </Server>
+    <Server>
+      <Name>Autonomy Board</Name>
+      <Address>192.168.1.138</Address>
+      <Commands>
+        <Record>
+          <Id>2576</Id>
+          <Name>AutonomousModeEnable</Name>
+          <Description />
+        </Record>
+        <Record>
+          <Id>2577</Id>
+          <Name>AutonomousModeDisable</Name>
+          <Description />
+        </Record>
+        <Record>
+          <Id>2578</Id>
+          <Name>WaypointAdd</Name>
+          <Description />
+        </Record>
+        <Record>
+          <Id>2579</Id>
+          <Name>WaypointsClearAll</Name>
+          <Description />
+        </Record>
+        <Record>
+          <Id>2581</Id>
+          <Name>AutonomyCalibrate</Name>
+          <Description />
+        </Record>
+      </Commands>
+      <Telemetry>
+        <Record>
+          <Id>2580</Id>
+          <Name>WaypointReached</Name>
+          <Description />
+        </Record>
+      </Telemetry>
+    </Server>
+    <Server>
+      <Name>Drill Board</Name>
+      <Address>192.168.1.139</Address>
+      <Commands>
+        <Record>
+          <Id>2900</Id>
+          <Name>Drill</Name>
+          <Description>-1000 to 1000 open loop for drill control</Description>
+        </Record>
+        <Record>
+          <Id>2901</Id>
+          <Name>Screw</Name>
+          <Description>-1000 to 1000 open loop for screw control</Description>
+        </Record>
+        <Record>
+          <Id>2902</Id>
+          <Name>Geneva</Name>
+          <Description>Commands carousel to rotate on open loop speed, CCW -&gt; CW, -1000 to 1000</Description>
+        </Record>
+        <Record>
+          <Id>2903</Id>
+          <Name>ScrewPosition</Name>
+          <Description>(1,4) positions: (Bottom, Pick-Up, Staged, Drop Point)</Description>
+        </Record>
+        <Record>
+          <Id>2904</Id>
+          <Name>GenevaPosition</Name>
+          <Description>(1,2,3,4,5,6) positions</Description>
+        </Record>
+      </Commands>
+      <Telemetry>
+        <Record>
+          <Id>2905</Id>
+          <Name>GenevaAtPos</Name>
+          <Description>byte, returns (1,6)</Description>
+        </Record>
+        <Record>
+          <Id>2906</Id>
+          <Name>ScrewAtPos</Name>
+          <Description>byte, returns (1,4)</Description>
+        </Record>
+        <Record>
+          <Id>2907</Id>
+          <Name>ScrewLimitTriggered</Name>
+          <Description>byte, (0,4) (0 if no trigger)</Description>
+        </Record>
+        <Record>
+          <Id>2908</Id>
+          <Name>GenevaLimitTriggered</Name>
+          <Description>byte, (0,1)</Description>
+        </Record>
+        <Record>
+          <Id>2909</Id>
+          <Name>CarouselLimitTriggered</Name>
+          <Description>byte, (0,1)</Description>
+        </Record>
+      </Telemetry>
+    </Server>
+    <Server>
+      <Name>Camera Board</Name>
+      <Address>192.168.1.140</Address>
+      <Commands>
+        <Record>
+          <Id>2832</Id>
+          <Name>CameraMuxChannel1</Name>
+          <Description>Selection for Camera Mux Channel 1</Description>
+        </Record>
+        <Record>
+          <Id>2833</Id>
+          <Name>CameraMuxChannel2</Name>
+          <Description>Selection for Camera Mux Channel 2</Description>
+        </Record>
+      </Commands>
+      <Telemetry />
+    </Server>
+  </Servers>
+</REDMetadataSaveFile>

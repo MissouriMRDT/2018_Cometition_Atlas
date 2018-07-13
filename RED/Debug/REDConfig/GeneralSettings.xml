@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<REDSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Drive>
+    <SpeedLimit>1000</SpeedLimit>
+    <UseLegacyDataIds>false</UseLegacyDataIds>
+  </Drive>
+  <Xbox1>
+    <AutoDeadzone>false</AutoDeadzone>
+    <ManualDeadzone>5000</ManualDeadzone>
+  </Xbox1>
+  <Xbox2>
+    <AutoDeadzone>false</AutoDeadzone>
+    <ManualDeadzone>5000</ManualDeadzone>
+  </Xbox2>
+  <Xbox3>
+    <AutoDeadzone>false</AutoDeadzone>
+    <ManualDeadzone>5000</ManualDeadzone>
+  </Xbox3>
+  <Xbox4>
+    <AutoDeadzone>false</AutoDeadzone>
+    <ManualDeadzone>5000</ManualDeadzone>
+  </Xbox4>
+  <GPS>
+    <BaseStationLocationLatitude>0</BaseStationLocationLatitude>
+    <BaseStationLocationLongitude>0</BaseStationLocationLongitude>
+    <StartLocationLatitude>38.406426</StartLocationLatitude>
+    <StartLocationLongitude>-110.791919</StartLocationLongitude>
+    <MapShowEmptyTiles>false</MapShowEmptyTiles>
+  </GPS>
+  <Science>
+    <SpectrometerIPAddress>192.168.1.135</SpectrometerIPAddress>
+    <SpectrometerPortNumber>11001</SpectrometerPortNumber>
+    <SpectrometerFilePath />
+  </Science>
+  <Power>
+    <AutoStartLog>false</AutoStartLog>
+  </Power>
+  <Network>
+    <EnableReliablePackets>false</EnableReliablePackets>
+  </Network>
+</REDSettings>

@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="RED.Views.Modules.GPSView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:addons="clr-namespace:RED.Addons"
+             xmlns:addonsNav="clr-namespace:RED.Addons.Navigation"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <addonsNav:GPSCoordinateToLatitudeConverter x:Key="LatitudeConverter" />
+        <addonsNav:GPSCoordinateToLongitudeConverter x:Key="LongitudeConverter" />
+        <addons:BoolToStringConverter x:Key="StaleDataConverter" TrueValue="" FalseValue="Strikethrough" />
+        <Style x:Key="MaybeStale">
+            <Setter Property="TextBlock.TextDecorations" Value="{Binding FixObtained, Converter={StaticResource StaleDataConverter}}" />
+        </Style>
+    </UserControl.Resources>
+    <StackPanel Orientation="Horizontal">
+        <Canvas Width="32" Height="32" Margin="16">
+            <Path Fill="{StaticResource AccentColorBrush}" Data="M 8,32 16,0 24,32 16,28 8,32" Width="32" Height="32">
+                <Path.LayoutTransform>
+                    <RotateTransform Angle="{Binding HeadingDeg}" />
+                </Path.LayoutTransform>
+            </Path>
+        </Canvas>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0">Fix Obtained</Label>
+            <Label Grid.Row="0" Grid.Column="1" x:Name="FixObtained" />
+            <Label Grid.Row="1" Grid.Column="0">Fix Quality</Label>
+            <Label Grid.Row="1" Grid.Column="1">
+                <TextBlock Grid.Row="1" Grid.Column="1" x:Name="FixQuality" Style="{DynamicResource MaybeStale}" />
+            </Label>
+            <Label Grid.Row="2" Grid.Column="0">Satellite Count</Label>
+            <Label Grid.Row="2" Grid.Column="1">
+                <TextBlock x:Name="NumberOfSatellites" Style="{DynamicResource MaybeStale}" />
+            </Label>
+            <Label Grid.Row="0" Grid.Column="2">Current Lat</Label>
+            <Label Grid.Row="0" Grid.Column="3">
+                <TextBlock Text="{Binding CurrentLocation, Converter={StaticResource LatitudeConverter}}" Style="{DynamicResource MaybeStale}" />
+            </Label>
+            <Label Grid.Row="1" Grid.Column="2">Current Lon</Label>
+            <Label Grid.Row="1" Grid.Column="3">
+                <TextBlock Text="{Binding CurrentLocation, Converter={StaticResource LongitudeConverter}}" Style="{DynamicResource MaybeStale}" />
+            </Label>
+            <Label Grid.Row="2" Grid.Column="2">Altitude</Label>
+            <Label Grid.Row="2" Grid.Column="3">
+                <TextBlock x:Name="CurrentAltitude" Style="{DynamicResource MaybeStale}" />
+            </Label>
+            <Label Grid.Row="0" Grid.Column="4">Speed</Label>
+            <Label Grid.Row="0" Grid.Column="5">
+                <TextBlock x:Name="Speed" Style="{DynamicResource MaybeStale}" />
+            </Label>
+            <Label Grid.Row="1" Grid.Column="4">Speed Angle</Label>
+            <Label Grid.Row="1" Grid.Column="5">
+                <TextBlock x:Name="SpeedAngle" Style="{DynamicResource MaybeStale}" />
+            </Label>
+            <Label Grid.Row="2" Grid.Column="4">Antenna Angle</Label>
+            <Label Grid.Row="2" Grid.Column="5">
+                <TextBlock Text="{Binding AntennaDirectionDeg, StringFormat={}{0:#0}&#x00B0;}" Style="{DynamicResource MaybeStale}" />
+            </Label>
+        </Grid>
+    </StackPanel>
+</UserControl>

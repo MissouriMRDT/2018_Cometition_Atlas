@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<InputSelectionData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Selections>
+    <Selection>
+      <ModeName>Drive</ModeName>
+      <DeviceName>Xbox 1</DeviceName>
+      <MappingName>Tank Drive (Traditional)</MappingName>
+      <Active>true</Active>
+    </Selection>
+    <Selection>
+      <ModeName>Arm</ModeName>
+      <DeviceName>Xbox 1</DeviceName>
+      <MappingName>Arm (Traditional)</MappingName>
+      <Active>false</Active>
+    </Selection>
+    <Selection>
+      <ModeName>Main Gimbal</ModeName>
+      <DeviceName>Xbox 1</DeviceName>
+      <MappingName>Xbox Gimbal</MappingName>
+      <Active>false</Active>
+    </Selection>
+    <Selection>
+      <ModeName>Science Controls</ModeName>
+      <DeviceName>Xbox 1</DeviceName>
+      <MappingName>Xbox Science Controls</MappingName>
+      <Active>false</Active>
+    </Selection>
+  </Selections>
+</InputSelectionData>
