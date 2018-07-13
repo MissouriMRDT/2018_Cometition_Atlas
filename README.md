@@ -1,2 +1,3 @@
-# 2018_Cometition_Atlas
-All Hardware and Software Files used in the 2018 Competition
+# DrillBoard-Software
+Controls the drill for science, moving both the drill motor and the motor controlling the lead screw that the drill is moved by. 
+Relies on the roveboard and roveware platform.
