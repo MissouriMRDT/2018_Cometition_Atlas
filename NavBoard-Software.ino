@@ -1,8 +1,8 @@
 #include <SPI.h>
 #include <Ethernet.h>
-#include "EthernetUdp.h"
+#include <EthernetUdp.h>
 
-#include "RoveBoard.h"
+#include "RoveEthernet.h"
 #include "RoveComm.h"
 
 #include <Adafruit_GPS.h>
