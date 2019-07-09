@@ -1,9 +1,6 @@
 # 2018_Cometition_Atlas
 All Hardware and Software Files used in the 2018 Competition
 
-Deprecated-Systems
-Deprecated sub-system repositories that have no present day equivalent
-
 How to add repos to this while retaining commit history:
 
 1. Clone this repo onto your pc
